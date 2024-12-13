@@ -1,0 +1,66 @@
+:root {
+  --red: hsl(12, 88%, 59%);
+  --red-100: hsl(13, 100%, 96%);
+  --blue: hsl(228, 39%, 23%);
+  --blue-200: hsl(233, 12%, 13%);
+  --gray: hsl(0, 0%, 98%);
+  --gray-100: hsl(227, 12%, 61%);
+  --p: 15vw;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--blue-200);
+  font-weight: 400;
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+.font-500 {
+  font-weight: 500;
+}
+.font-700 {
+  font-weight: 700;
+}
+.back-screen {
+  display: none;
+}
+.btn {
+  background-color: var(--red);
+  padding: 10px 15px;
+  color: var(--red-100);
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+@media screen and (max-width: 1100px) {
+  body {
+    &.nav-open {
+      overflow: hidden;
+      .back-screen {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(
+          to top,
+          rgb(100, 100, 100, 0.5),
+          rgb(255, 255, 255, 0)
+        );
+      }
+    }
+  }
+}

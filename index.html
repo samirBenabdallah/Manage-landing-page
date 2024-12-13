@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/nav.css" />
+    <link rel="stylesheet" href="src/header.css" />
+    <link rel="stylesheet" href="src/article.css" />
+    <link rel="stylesheet" href="src/about.css" />
+    <link rel="stylesheet" href="src/section.css" />
+    <link rel="stylesheet" href="src/footer.css" />
+    <title>Frontend Mentor | Manage landing page</title>
+  </head>
+  <body>
+    <div class="back-screen"></div>
+    <nav>
+      <img src="images/logo.svg" alt="logo" />
+      <ul>
+        <li>Pricing</li>
+        <li>Product</li>
+        <li>About Us</li>
+        <li>Careers</li>
+        <li>Community</li>
+      </ul>
+      <button class="btn">Get Started</button>
+      <button class="mobile-button">
+        <img src="images/icon-hamburger.svg" alt="open" id="openImg" />
+        <img src="images/icon-close.svg" alt="close" id="closeImg" />
+      </button>
+    </nav>
+    <header>
+      <main>
+        <h1 class="font-700">
+          Bring everyone together to build better products.
+        </h1>
+        <p>
+          Manage makes it simple for software teams <br />
+          to plan day-to-day tasks while keeping the <br />
+          larger team goals in view.
+        </p>
+        <button class="btn">Get Started</button>
+      </main>
+      <img src="./images/illustration-intro.svg" alt="intro img" />
+    </header>
+    <article>
+      <aside>
+        <h1 class="font-700">What’s different about Manage?</h1>
+        <p>
+          Manage provides all the functionality your team needs, without the
+          complexity. Our software is tailor-made for modern digital product
+          teams.
+        </p>
+      </aside>
+      <main>
+        <div>
+          <button class="btn">01</button>
+          <h2 class="font-700">Track company-wide progress</h2>
+          <p>
+            See how your day-to-day tasks fit into the wider vision. Go from
+            tracking progress at the milestone level all the way done to the
+            smallest of details. Never lose sight of the bigger picture again.
+          </p>
+        </div>
+        <div>
+          <button class="btn">02</button>
+          <h2 class="font-700">Advanced built-in reports</h2>
+          <p>
+            Set internal delivery estimates and track progress toward company
+            goals. Our customisable dashboard helps you build out the reports
+            you need to keep key stakeholders informed.
+          </p>
+        </div>
+        <div>
+          <button class="btn">03</button>
+          <h2 class="font-700">Everything you need in one place</h2>
+          <p>
+            Stop jumping from one service to another to communicate, store
+            files, track tasks and share documents. Manage offers an all-in-one
+            team productivity solution.
+          </p>
+        </div>
+      </main>
+    </article>
+    <div class="about">
+      <h1 class="font-700">What they’ve said</h1>
+      <div>
+        <div>
+          <img src="images/avatar-anisha.png" alt="" />
+          <h2 class="font-700">Anisha Li</h2>
+          <p>
+            “Manage has supercharged our team’s workflow. The ability to
+            maintain visibility on larger milestones at all times keeps everyone
+            motivated.”
+          </p>
+        </div>
+        <div class="active">
+          <img src="images/avatar-ali.png" alt="" />
+          <h2 class="font-700">Ali Bravo</h2>
+          <p>
+            “We have been able to cancel so many other subscriptions since using
+            Manage. There is no more cross-channel confusion and everyone is
+            much more focused.”
+          </p>
+        </div>
+        <div>
+          <img src="images/avatar-richard.png" alt="" />
+          <h2 class="font-700">Richard Watts</h2>
+          <p>
+            “Manage allows us to provide structure and process. It keeps us
+            organized and focused. I can’t stop recommending them to everyone I
+            talk to!”
+          </p>
+        </div>
+        <div>
+          <img src="images/avatar-shanai.png" alt="" />
+          <h2 class="font-700">Shanai Gough</h2>
+          <p>
+            “Their software allows us to track, manage and collaborate on our
+            projects from anywhere. It keeps the whole team in-sync without
+            being intrusive.”
+          </p>
+        </div>
+        <div class="mobile-button">
+          <button data-number="0"></button>
+          <button data-number="1" class="active"></button>
+          <button data-number="2"></button>
+          <button data-number="3"></button>
+        </div>
+      </div>
+
+      <button class="btn">Get Started</button>
+    </div>
+    <section>
+      <h1 class="font-700">
+        Simplify how your team <br />
+        works today.
+      </h1>
+      <button class="btn">Get Started</button>
+    </section>
+    <footer>
+      <img src="./images/logo.svg" alt="logo" />
+      <div>
+        <img src="./images/icon-facebook.svg" alt="" />
+        <img src="images/icon-youtube.svg" alt="" />
+        <img src="images/icon-twitter.svg" alt="" />
+        <img src="images/icon-pinterest.svg" alt="" />
+        <img src="images/icon-instagram.svg" alt="" />
+      </div>
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>Pricing</li>
+          <li>Products</li>
+          <li>About Us</li>
+        </ul>
+        <ul>
+          <li>Careers</li>
+          <li>Community</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+      <div class="input">
+        <input type="text" placeholder="Updates in your inbox…" />
+        <p id="errorMessage">please inter a valid email</p>
+        <button class="btn">Go</button>
+      </div>
+      <p>Copyright 2020. All Rights Reserved</p>
+    </footer>
+    <script src="src/action.js"></script>
+  </body>
+</html>
